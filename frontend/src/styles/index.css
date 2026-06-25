@@ -24,8 +24,8 @@
 .ambient-orbit-two{width:36rem;height:10rem;right:-12rem;bottom:8rem;border-color:rgba(255,111,145,.18);background:linear-gradient(90deg,transparent,rgba(255,111,145,.11),transparent)}
 .ambient-reaction{position:absolute;bottom:-4rem;color:rgba(255,255,255,.42);text-shadow:0 0 24px rgba(69,217,255,.55);animation:reactionFloat 13s linear infinite;opacity:0;font-weight:900}
 .ambient-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:78px 78px;mask-image:radial-gradient(circle at 50% 50%,black,transparent 74%);opacity:.45;animation:gridDrift 24s linear infinite}
-.brand-logo-nav{height:2.25rem;width:2.25rem;border-radius:1rem;object-fit:cover;box-shadow:0 0 22px rgba(69,217,255,.36),inset 0 0 0 1px rgba(255,255,255,.18)}
-.landing-logo{width:min(18rem,64vw);border-radius:2rem;box-shadow:0 24px 90px rgba(0,0,0,.35),0 0 70px rgba(69,217,255,.22);border:1px solid rgba(255,255,255,.12)}
+.brand-logo-nav{display:block;height:2.65rem;width:auto;max-width:10.5rem;border-radius:0;object-fit:contain;filter:drop-shadow(0 0 18px rgba(69,217,255,.34));background:transparent}
+.landing-logo{display:block;width:min(30rem,86vw);height:auto;border-radius:1.75rem;box-shadow:0 24px 90px rgba(0,0,0,.35),0 0 70px rgba(69,217,255,.22);border:1px solid rgba(255,255,255,.12)}
 @keyframes auroraFlow{0%{background-position:0% 30%}100%{background-position:100% 70%}}
 @keyframes meshPulse{0%{transform:translate3d(-2%,1%,0) scale(1);opacity:.5}100%{transform:translate3d(3%,-2%,0) scale(1.08);opacity:.82}}
 @keyframes reactionFloat{0%{transform:translate3d(0,0,0) scale(.65) rotate(-10deg);opacity:0}12%{opacity:.7}55%{opacity:.42}100%{transform:translate3d(4rem,-115vh,0) scale(1.35) rotate(18deg);opacity:0}}
@@ -34,5 +34,5 @@
 .light .ambient-mesh{opacity:.45;filter:blur(86px)}
 .light .ambient-grid{background-image:linear-gradient(rgba(15,23,42,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.045) 1px,transparent 1px);opacity:.55}
 .light .ambient-reaction{color:rgba(15,23,42,.25);text-shadow:0 0 22px rgba(69,217,255,.32)}
-.light .brand-logo-nav,.light .landing-logo{box-shadow:0 18px 55px rgba(15,23,42,.16),0 0 50px rgba(69,217,255,.18)}
+.light .brand-logo-nav{filter:drop-shadow(0 12px 28px rgba(15,23,42,.18)) drop-shadow(0 0 22px rgba(69,217,255,.16))}.light .landing-logo{box-shadow:0 18px 55px rgba(15,23,42,.16),0 0 50px rgba(69,217,255,.18)}
 @media (prefers-reduced-motion:reduce){.bg-aurora,.ambient-mesh,.ambient-orbit,.ambient-reaction,.ambient-grid{animation:none!important}}

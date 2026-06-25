@@ -1,0 +1,11 @@
+﻿node_modules/
+dist/
+frontend/dist/
+.env
+.env.*
+*.log
+vite-*.log
+qa-*.png
+qa-*.html
+.DS_Store
+Thumbs.db

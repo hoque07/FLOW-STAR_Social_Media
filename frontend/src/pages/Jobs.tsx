@@ -1,0 +1,2 @@
+import {JobCard} from '../components/career/JobCard';import {demoJobs} from '../data/mock';import {usePageTitle} from '../hooks/usePageTitle';
+export default function Jobs(){usePageTitle('Jobs');return <div className="space-y-5"><h1 className="text-3xl font-black">Jobs</h1><p className="text-sm text-soft">Mock listings with fake match percentages.</p><div className="grid gap-4 xl:grid-cols-2">{demoJobs.map(j=><JobCard key={j.id} job={j}/>)}</div></div>}
